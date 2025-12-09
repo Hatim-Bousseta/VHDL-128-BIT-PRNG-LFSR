@@ -27,9 +27,6 @@ The generator uses the **Fibonacci Configuration** for its feedback mechanism.
 
 The design consists of a 128-bit shift register, an XOR logic network, and an implicit multiplexer that handles the priority reset logic.
 
-**Architectural Diagram:**
-![LFSR Architecture Diagram](<img width="1356" height="571" alt="GIT_sgn" src="https://github.com/user-attachments/assets/6c537472-8efd-49c3-a406-945456b01be9" />
-) 
 
 
 * **Asynchronous Reset:** When `rst = '1'`, the register is immediately forced to the `DEFAULT_SEED` value, bypassing the clock.
@@ -56,3 +53,9 @@ The Testbench is used to prove that the LFSR loads the seed correctly and genera
 ## 🛑 Security Note
 
 This LFSR implements a basic **PRNG**. While efficient in hardware, it is **not cryptographically secure (CSPRNG)** on its own. For production cryptographic applications, this module should be seeded by a **TRNG (True Random Number Generator)** and/or integrated into a more complex, non-linear architecture to prevent sequence prediction.
+
+
+
+
+<img width="1356" height="571" alt="GIT_sgn" src="https://github.com/user-attachments/assets/bdcc9ed8-26cd-41b5-8320-ec5f14c4b39d" />
+
