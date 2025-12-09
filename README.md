@@ -6,13 +6,13 @@ This repository contains the VHDL implementation of a **Pseudo-Random Number Gen
 
 This module is designed for hardware applications (FPGA) where high-speed, resource-efficient key generation is required, such as in the key expansion stage for AES encryption on embedded systems (e.g., drones).
 
----
+
 
 
 
 The generator uses the **Fibonacci Configuration** for its feedback mechanism.
 
-### Key Specifications
+
 
 | Feature | Detail |
 | :--- | :--- |
